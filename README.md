@@ -57,6 +57,28 @@ O projeto está sendo desenvolvido utilizando C# e Windows Forms, com foco em bo
 - **Git**
 - **GitHub**
 
+## 🖥️ Telas do sistema
+
+### 🔐 Login
+
+![Tela de Login](imagens/login.png)
+
+### 🏠 Tela Principal
+
+![Tela Principal](imagens/principal.png)
+
+### 👥 Clientes
+
+![Cadastro de Clientes](imagens/clientes.png)
+
+### 📦 Produtos
+
+![Cadastro de Produtos](imagens/produtos.png)
+
+### 🛒 Vendas
+
+![Tela de Vendas](imagens/vendas.png)
+
 ## 🧠 Conceitos aplicados
 
 Durante o desenvolvimento do projeto estão sendo aplicados conceitos como:
