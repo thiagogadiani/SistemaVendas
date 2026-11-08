@@ -1,10 +1,11 @@
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace SistemaVendas {
     public partial class FrmLogin : Form {
         public FrmLogin() {
             InitializeComponent();
+            TemaSistema.Aplicar(this);
         }
 
         private void btnEntrar_Click(object sender, EventArgs e) {

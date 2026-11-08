@@ -7,6 +7,7 @@ namespace SistemaVendas {
 
         public FrmProdutos() {
             InitializeComponent();
+            TemaSistema.Aplicar(this);
 
             dgvProdutos.DataSource = produtos;
 

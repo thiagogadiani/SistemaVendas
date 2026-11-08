@@ -5,6 +5,9 @@ namespace SistemaVendas {
     public partial class FrmPrincipal : Form {
         public FrmPrincipal() {
             InitializeComponent();
+            TemaSistema.AplicarPainelPrincipal(
+                this, lblTitulo, btnProdutos, btnClientes,
+                btnVenda, btnEstoque, btnRelatorios, btnSair);
         }
 
         private void btnProdutos_Click(object sender, EventArgs e) {

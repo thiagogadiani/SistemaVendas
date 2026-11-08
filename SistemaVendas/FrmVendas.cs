@@ -14,6 +14,7 @@ namespace SistemaVendas {
 
         public FrmVendas() {
             InitializeComponent();
+            TemaSistema.Aplicar(this);
         }
 
         private void label3_Click(object sender, EventArgs e) {

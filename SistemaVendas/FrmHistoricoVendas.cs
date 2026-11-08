@@ -6,6 +6,7 @@ namespace SistemaVendas {
     public partial class FrmHistoricoVendas : Form {
         public FrmHistoricoVendas() {
             InitializeComponent();
+            TemaSistema.Aplicar(this);
 
             CarregarVendas();
         }

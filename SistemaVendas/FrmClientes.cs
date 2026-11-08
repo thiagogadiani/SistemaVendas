@@ -14,6 +14,7 @@ namespace SistemaVendas {
 
         public FrmClientes() {
             InitializeComponent();
+            TemaSistema.Aplicar(this);
 
             dgvClientes.AllowUserToAddRows = false;
 

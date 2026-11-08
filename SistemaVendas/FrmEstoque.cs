@@ -6,6 +6,7 @@ namespace SistemaVendas {
     public partial class FrmEstoque : Form {
         public FrmEstoque() {
             InitializeComponent();
+            TemaSistema.Aplicar(this);
 
             CarregarEstoque();
         }
