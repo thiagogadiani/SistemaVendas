@@ -179,9 +179,9 @@
             // dgvProdutos
             // 
             dgvProdutos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProdutos.Location = new Point(481, 108);
+            dgvProdutos.Location = new Point(347, 82);
             dgvProdutos.Name = "dgvProdutos";
-            dgvProdutos.Size = new Size(240, 150);
+            dgvProdutos.Size = new Size(441, 262);
             dgvProdutos.TabIndex = 15;
             dgvProdutos.CellClick += dgvProdutos_CellClick;
             // 

@@ -117,7 +117,7 @@
             txtEmail.Location = new Point(113, 266);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(100, 23);
-            txtEmail.TabIndex = 8;
+            txtEmail.TabIndex = 10;
             // 
             // txtTelefone
             // 
@@ -131,7 +131,7 @@
             txtCpf.Location = new Point(113, 177);
             txtCpf.Name = "txtCpf";
             txtCpf.Size = new Size(100, 23);
-            txtCpf.TabIndex = 10;
+            txtCpf.TabIndex = 8;
             txtCpf.TextChanged += txtCpf_TextChanged;
             // 
             // btnCadastrar
@@ -177,9 +177,9 @@
             // dgvClientes
             // 
             dgvClientes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvClientes.Location = new Point(433, 104);
+            dgvClientes.Location = new Point(267, 77);
             dgvClientes.Name = "dgvClientes";
-            dgvClientes.Size = new Size(240, 150);
+            dgvClientes.Size = new Size(500, 249);
             dgvClientes.TabIndex = 15;
             dgvClientes.CellContentClick += dgvClientes_CellContentClick;
             // 
@@ -205,7 +205,7 @@
             Controls.Add(lblCodigo);
             Controls.Add(lblTitulo);
             Name = "FrmClientes";
-            Text = "FrmClientes";
+            Text = "88";
             ((System.ComponentModel.ISupportInitialize)dgvClientes).EndInit();
             ResumeLayout(false);
             PerformLayout();

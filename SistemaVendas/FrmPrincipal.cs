@@ -36,5 +36,18 @@ namespace SistemaVendas {
             FrmEstoque estoque = new FrmEstoque();
             estoque.ShowDialog();
         }
+
+        private void btnSair_Click(object sender, EventArgs e) {
+            DialogResult resultado = MessageBox.Show(
+                "Deseja realmente sair do sistema?",
+                "Sair",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (resultado == DialogResult.Yes) {
+                Application.Exit();
+            }
+        }
     }
 }

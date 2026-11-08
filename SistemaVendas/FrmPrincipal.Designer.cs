@@ -35,7 +35,7 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Location = new Point(275, 25);
+            lblTitulo.Location = new Point(290, 28);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(118, 15);
             lblTitulo.TabIndex = 0;
@@ -43,9 +43,9 @@
             // 
             // btnProdutos
             // 
-            btnProdutos.Location = new Point(131, 126);
+            btnProdutos.Location = new Point(109, 117);
             btnProdutos.Name = "btnProdutos";
-            btnProdutos.Size = new Size(75, 23);
+            btnProdutos.Size = new Size(120, 66);
             btnProdutos.TabIndex = 1;
             btnProdutos.Text = "Produtos";
             btnProdutos.UseVisualStyleBackColor = true;
@@ -53,9 +53,9 @@
             // 
             // btnClientes
             // 
-            btnClientes.Location = new Point(131, 232);
+            btnClientes.Location = new Point(109, 235);
             btnClientes.Name = "btnClientes";
-            btnClientes.Size = new Size(75, 23);
+            btnClientes.Size = new Size(120, 66);
             btnClientes.TabIndex = 2;
             btnClientes.Text = "Clientes";
             btnClientes.UseVisualStyleBackColor = true;
@@ -63,9 +63,9 @@
             // 
             // btnVenda
             // 
-            btnVenda.Location = new Point(303, 126);
+            btnVenda.Location = new Point(288, 117);
             btnVenda.Name = "btnVenda";
-            btnVenda.Size = new Size(75, 23);
+            btnVenda.Size = new Size(120, 66);
             btnVenda.TabIndex = 3;
             btnVenda.Text = "Vendas";
             btnVenda.UseVisualStyleBackColor = true;
@@ -73,9 +73,9 @@
             // 
             // btnEstoque
             // 
-            btnEstoque.Location = new Point(303, 230);
+            btnEstoque.Location = new Point(288, 235);
             btnEstoque.Name = "btnEstoque";
-            btnEstoque.Size = new Size(75, 23);
+            btnEstoque.Size = new Size(120, 66);
             btnEstoque.TabIndex = 4;
             btnEstoque.Text = "Estoque";
             btnEstoque.UseVisualStyleBackColor = true;
@@ -83,9 +83,9 @@
             // 
             // btnRelatorios
             // 
-            btnRelatorios.Location = new Point(456, 126);
+            btnRelatorios.Location = new Point(480, 117);
             btnRelatorios.Name = "btnRelatorios";
-            btnRelatorios.Size = new Size(75, 23);
+            btnRelatorios.Size = new Size(120, 66);
             btnRelatorios.TabIndex = 5;
             btnRelatorios.Text = "Relatórios";
             btnRelatorios.UseVisualStyleBackColor = true;
@@ -93,12 +93,13 @@
             // 
             // btnSair
             // 
-            btnSair.Location = new Point(456, 232);
+            btnSair.Location = new Point(480, 235);
             btnSair.Name = "btnSair";
-            btnSair.Size = new Size(75, 23);
+            btnSair.Size = new Size(120, 66);
             btnSair.TabIndex = 6;
             btnSair.Text = "Sair";
             btnSair.UseVisualStyleBackColor = true;
+            btnSair.Click += btnSair_Click;
             // 
             // FrmPrincipal
             // 

@@ -131,7 +131,7 @@
             // 
             // txtTotal
             // 
-            txtTotal.Location = new Point(224, 303);
+            txtTotal.Location = new Point(190, 303);
             txtTotal.Name = "txtTotal";
             txtTotal.Size = new Size(100, 23);
             txtTotal.TabIndex = 10;
@@ -169,10 +169,11 @@
             // dgvItensVenda
             // 
             dgvItensVenda.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvItensVenda.Location = new Point(450, 118);
+            dgvItensVenda.Location = new Point(318, 72);
             dgvItensVenda.Name = "dgvItensVenda";
-            dgvItensVenda.Size = new Size(240, 150);
+            dgvItensVenda.Size = new Size(458, 254);
             dgvItensVenda.TabIndex = 14;
+            dgvItensVenda.CellContentClick += dgvItensVenda_CellContentClick;
             // 
             // FrmVendas
             // 

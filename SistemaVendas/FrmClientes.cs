@@ -79,6 +79,41 @@ namespace SistemaVendas {
             return new string(cpf.Where(char.IsDigit).ToArray());
         }
 
+        private bool ValidarTelefone(string telefone) {
+            string numeros = new string(telefone.Where(char.IsDigit).ToArray());
+
+            // Telefone deve ter 10 ou 11 dígitos:
+            // 10 = (11) 9999-9999
+            // 11 = (11) 99999-9999
+            if (numeros.Length != 10 && numeros.Length != 11)
+                return false;
+
+            // Verifica se o DDD possui 2 dígitos
+            string ddd = numeros.Substring(0, 2);
+
+            if (!int.TryParse(ddd, out int numeroDdd))
+                return false;
+
+            // DDDs brasileiros válidos: 11 a 99
+            if (numeroDdd < 11 || numeroDdd > 99)
+                return false;
+
+            return true;
+        }
+        private bool ValidarEmail(string email) {
+            try {
+                var endereco = new System.Net.Mail.MailAddress(email);
+                return endereco.Address == email;
+            }
+            catch {
+                return false;
+            }
+        }
+
+        private bool ValidarNome(string nome) {
+            return nome.All(c => char.IsLetter(c) || char.IsWhiteSpace(c));
+        }
+
         private void button2_Click(object sender, EventArgs e) {
             if (dgvClientes.CurrentRow == null) {
                 MessageBox.Show("Selecione um cliente para editar.");
@@ -165,9 +200,21 @@ namespace SistemaVendas {
                 return;
             }
 
+            if (!ValidarTelefone(txtTelefone.Text)) {
+                MessageBox.Show("Informe um telefone válido com DDD.");
+                return;
+            }
+
             // Valida e-mail
             if (string.IsNullOrWhiteSpace(txtEmail.Text)) {
                 MessageBox.Show("Informe o e-mail do cliente.");
+                txtEmail.Focus();
+                return;
+            }
+
+            if (!ValidarEmail(txtEmail.Text)) {
+                MessageBox.Show("Informe um e-mail válido.");
+                txtEmail.Focus();
                 return;
             }
 
@@ -196,6 +243,24 @@ namespace SistemaVendas {
 
             if (string.IsNullOrWhiteSpace(txtNome.Text)) {
                 MessageBox.Show("Informe o nome do cliente.");
+                txtNome.Focus();
+                return;
+            }
+
+            if (!ValidarNome(txtNome.Text)) {
+                MessageBox.Show("O nome deve conter apenas letras.");
+                txtNome.Focus();
+                return;
+            }
+
+
+            if (string.IsNullOrWhiteSpace(txtTelefone.Text)) {
+                MessageBox.Show("Informe o telefone do cliente.");
+                return;
+            }
+
+            if (!ValidarTelefone(txtTelefone.Text)) {
+                MessageBox.Show("Informe um telefone válido com DDD.");
                 return;
             }
 
@@ -225,6 +290,13 @@ namespace SistemaVendas {
                 MessageBox.Show("Informe o e-mail do cliente.");
                 return;
             }
+
+            if (!ValidarEmail(txtEmail.Text)) {
+                MessageBox.Show("Informe um e-mail válido.");
+                txtEmail.Focus();
+                return;
+            }
+
 
             if (clientes.Any(c => c.Codigo == codigo)) {
                 MessageBox.Show("Já existe um cliente com esse código.");

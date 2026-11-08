@@ -203,5 +203,9 @@ namespace SistemaVendas {
 
             lblTotal.Text = "Total da venda: R$ 0,00";
         }
+
+        private void dgvItensVenda_CellContentClick(object sender, DataGridViewCellEventArgs e) {
+
+        }
     }
 }
